@@ -2,5 +2,10 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static ThemeData appTheme = ThemeData(
-      colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent));
+    useMaterial3: true,
+    colorScheme: ColorScheme.fromSeed(
+        brightness: Brightness.light,
+        dynamicSchemeVariant: DynamicSchemeVariant.expressive,
+        seedColor: Colors.green),
+  );
 }
