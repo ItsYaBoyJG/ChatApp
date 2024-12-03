@@ -15,10 +15,10 @@ dependencies:
 
   go_router: ^14.3.0
 
-  cloud_firestore: ^5.4.4
-  firebase_core: ^3.6.0
-  firebase_storage: ^12.3.4
-  firebase_auth: ^5.3.1
+  #cloud_firestore: ^5.4.4
+  #firebase_core: ^3.6.0
+  #firebase_storage: ^12.3.4
+  #firebase_auth: ^5.3.1
 
   #stream_video_flutter: ^0.6.0
 
