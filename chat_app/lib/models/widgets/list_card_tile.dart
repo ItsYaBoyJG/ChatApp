@@ -6,6 +6,7 @@ class ListCardTile extends StatelessWidget {
 
   final String leadingData;
   final void Function() onTap;
+
   @override
   Widget build(BuildContext context) {
     return Card(

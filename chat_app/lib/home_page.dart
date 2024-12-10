@@ -1,9 +1,8 @@
-import 'package:chat_app/button.dart';
-import 'package:chat_app/call_history.dart';
-import 'package:chat_app/chats/chat_notification_list.dart';
-import 'package:chat_app/theme.dart';
+import 'package:chat_app/utils/theme/app_theme.dart';
+import 'package:chat_app/view/video_chat/call_history.dart';
+import 'package:chat_app/view/chats/chat_notification_list.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({super.key});
@@ -15,6 +14,17 @@ class HomePage extends ConsumerStatefulWidget {
 }
 
 class _HomePageState extends ConsumerState<HomePage> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,6 +54,7 @@ class _HomePageState extends ConsumerState<HomePage> {
             ),
           ),
         ),
+        onTap: () {},
       ),
     );
   }

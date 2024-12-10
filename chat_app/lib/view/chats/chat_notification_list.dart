@@ -1,8 +1,7 @@
-import 'package:chat_app/list_card_tile.dart';
-import 'package:chat_app/theme.dart';
+import 'package:chat_app/models/widgets/list_card_tile.dart';
+import 'package:chat_app/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class ChatNotificationList extends ConsumerStatefulWidget {
   const ChatNotificationList({super.key});

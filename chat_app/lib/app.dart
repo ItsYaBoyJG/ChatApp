@@ -1,5 +1,5 @@
 import 'package:chat_app/routes.dart';
-import 'package:chat_app/theme.dart';
+import 'package:chat_app/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class VideoTextChatApp extends StatelessWidget {
