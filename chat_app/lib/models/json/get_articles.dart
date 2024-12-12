@@ -1,7 +1,7 @@
 import 'dart:convert';
 
+import 'package:chat_app/models/news/news_model.dart';
 import 'package:flutter/services.dart';
-import 'package:snapchat_clone/models/news/news_model.dart';
 
 class GetArticles {
   final _filepath = 'assets/json/news_articles.json';

@@ -1,0 +1,950 @@
+{
+    "users": [
+        {
+            "username": "user_0",
+            "friend_streak": 48,
+            "messages": [
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-21T03:05:07.719092"
+                },
+                {
+                    "text": "Let's hang out soon.",
+                    "timestamp": "2024-10-13T19:40:07.719116"
+                },
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-11-04T00:50:07.719127"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-29T11:03:07.719139"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/85.jpg"
+        },
+        {
+            "username": "user_1",
+            "friend_streak": 13,
+            "messages": [
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-15T12:20:07.719154"
+                },
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-11-03T05:59:07.719162"
+                },
+                {
+                    "text": "Let's hang out soon.",
+                    "timestamp": "2024-10-31T02:42:07.719172"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/17.jpg"
+        },
+        {
+            "username": "user_2",
+            "friend_streak": 79,
+            "messages": [
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-11-07T19:06:07.719189"
+                },
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-10-30T07:39:07.719199"
+                },
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-11-03T14:25:07.719208"
+                },
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-11-11T09:19:07.719217"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/64.jpg"
+        },
+        {
+            "username": "user_3",
+            "friend_streak": 58,
+            "messages": [
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-10-29T21:19:07.719231"
+                },
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-11-03T09:15:07.719240"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/45.jpg"
+        },
+        {
+            "username": "user_4",
+            "friend_streak": 93,
+            "messages": [
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-10-12T14:41:07.719253"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-11-10T02:38:07.719262"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/8.jpg"
+        },
+        {
+            "username": "user_5",
+            "friend_streak": 69,
+            "messages": [
+                {
+                    "text": "Let's hang out soon.",
+                    "timestamp": "2024-10-14T17:51:07.719276"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-10-21T11:25:07.719284"
+                },
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-11-06T17:33:07.719300"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-11-08T21:36:07.719308"
+                },
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-10-23T19:21:07.719316"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/98.jpg"
+        },
+        {
+            "username": "user_6",
+            "friend_streak": 96,
+            "messages": [
+                {
+                    "text": "Let's hang out soon.",
+                    "timestamp": "2024-10-28T03:19:07.719331"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-10-19T16:53:07.719339"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/92.jpg"
+        },
+        {
+            "username": "user_7",
+            "friend_streak": 14,
+            "messages": [
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-10-29T10:33:07.719356"
+                },
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-10-17T01:55:07.719364"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-11-08T22:10:07.719372"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/96.jpg"
+        },
+        {
+            "username": "user_8",
+            "friend_streak": 83,
+            "messages": [
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-10-23T15:52:07.719386"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-11-07T04:03:07.719394"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-23T15:10:07.719402"
+                },
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-10-21T03:55:07.719410"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-11-11T13:11:07.719417"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/7.jpg"
+        },
+        {
+            "username": "user_9",
+            "friend_streak": 61,
+            "messages": [
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-19T20:53:07.719533"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-27T14:49:07.719544"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-25T03:31:07.719552"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+        },
+        {
+            "username": "user_10",
+            "friend_streak": 19,
+            "messages": [
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-11-10T22:14:07.719566"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-10-30T17:04:07.719575"
+                },
+                {
+                    "text": "Let's hang out soon.",
+                    "timestamp": "2024-11-04T14:43:07.719583"
+                },
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-11-07T15:03:07.719591"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/67.jpg"
+        },
+        {
+            "username": "user_11",
+            "friend_streak": 43,
+            "messages": [
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-28T15:54:07.719605"
+                },
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-10-29T18:33:07.719613"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/13.jpg"
+        },
+        {
+            "username": "user_12",
+            "friend_streak": 6,
+            "messages": [
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-31T19:12:07.719627"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-11-03T07:38:07.719636"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-13T17:04:07.719643"
+                },
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-10-13T10:42:07.719651"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-11-04T00:35:07.719659"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/86.jpg"
+        },
+        {
+            "username": "user_13",
+            "friend_streak": 49,
+            "messages": [
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-10-22T01:31:07.719672"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/42.jpg"
+        },
+        {
+            "username": "user_14",
+            "friend_streak": 1,
+            "messages": [
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-11-07T05:27:07.719686"
+                },
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-11-05T19:32:07.719694"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/34.jpg"
+        },
+        {
+            "username": "user_15",
+            "friend_streak": 30,
+            "messages": [
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-30T18:42:07.719708"
+                },
+                {
+                    "text": "Let's hang out soon.",
+                    "timestamp": "2024-10-16T05:44:07.719715"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-10-16T10:06:07.719724"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-16T00:23:07.719732"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/92.jpg"
+        },
+        {
+            "username": "user_16",
+            "friend_streak": 91,
+            "messages": [
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-11-07T19:12:07.719745"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-19T11:55:07.719753"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-26T10:04:07.719761"
+                },
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-10-17T11:42:07.719769"
+                },
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-10-12T00:16:07.719777"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/68.jpg"
+        },
+        {
+            "username": "user_17",
+            "friend_streak": 9,
+            "messages": [
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-22T18:17:07.719790"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
+        },
+        {
+            "username": "user_18",
+            "friend_streak": 55,
+            "messages": [
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-10-27T07:49:07.719802"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-10-27T23:21:07.719810"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/43.jpg"
+        },
+        {
+            "username": "user_19",
+            "friend_streak": 36,
+            "messages": [
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-19T01:30:07.719820"
+                },
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-10-12T16:10:07.719827"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-10-13T23:47:07.719833"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/63.jpg"
+        },
+        {
+            "username": "user_20",
+            "friend_streak": 42,
+            "messages": [
+                {
+                    "text": "Let's hang out soon.",
+                    "timestamp": "2024-10-19T22:22:07.719844"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-11-06T23:50:07.719850"
+                },
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-10-26T20:24:07.719856"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/94.jpg"
+        },
+        {
+            "username": "user_21",
+            "friend_streak": 52,
+            "messages": [
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-11-06T17:00:07.719867"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-10-22T17:12:07.719873"
+                },
+                {
+                    "text": "Let's hang out soon.",
+                    "timestamp": "2024-10-16T05:48:07.719879"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/29.jpg"
+        },
+        {
+            "username": "user_22",
+            "friend_streak": 25,
+            "messages": [
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-22T02:49:07.719900"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-27T02:35:07.719909"
+                },
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-10-30T13:52:07.719916"
+                },
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-10-14T13:27:07.719922"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-10-12T03:36:07.719928"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/29.jpg"
+        },
+        {
+            "username": "user_23",
+            "friend_streak": 13,
+            "messages": [
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-10-18T13:37:07.719940"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-11-03T16:29:07.719946"
+                },
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-10-17T13:08:07.719952"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-31T07:24:07.719958"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-11-11T15:21:07.719964"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/97.jpg"
+        },
+        {
+            "username": "user_24",
+            "friend_streak": 27,
+            "messages": [
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-10-19T18:58:07.719975"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-10-27T13:54:07.719982"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-11-09T22:47:07.719989"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
+        },
+        {
+            "username": "user_25",
+            "friend_streak": 64,
+            "messages": [
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-23T18:52:07.720003"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-12T17:53:07.720011"
+                },
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-10-30T23:08:07.720018"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/60.jpg"
+        },
+        {
+            "username": "user_26",
+            "friend_streak": 30,
+            "messages": [
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-10-15T09:29:07.720031"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-22T23:41:07.720039"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+        },
+        {
+            "username": "user_27",
+            "friend_streak": 22,
+            "messages": [
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-10-26T00:25:07.720053"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-27T07:47:07.720061"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-11-09T00:19:07.720069"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-11-11T12:16:07.720077"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/96.jpg"
+        },
+        {
+            "username": "user_28",
+            "friend_streak": 51,
+            "messages": [
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-10-17T00:48:07.720090"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-24T16:47:07.720098"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-25T00:06:07.720105"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-11-10T11:39:07.720113"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-11-08T12:42:07.720121"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/66.jpg"
+        },
+        {
+            "username": "user_29",
+            "friend_streak": 53,
+            "messages": [
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-18T01:33:07.720136"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/98.jpg"
+        },
+        {
+            "username": "user_30",
+            "friend_streak": 83,
+            "messages": [
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-10-27T02:24:07.720149"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-11-04T02:26:07.720163"
+                },
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-10-14T11:18:07.720171"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/48.jpg"
+        },
+        {
+            "username": "user_31",
+            "friend_streak": 46,
+            "messages": [
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-11-07T15:34:07.720184"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/81.jpg"
+        },
+        {
+            "username": "user_32",
+            "friend_streak": 61,
+            "messages": [
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-10-14T19:22:07.720201"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-29T16:54:07.720209"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/92.jpg"
+        },
+        {
+            "username": "user_33",
+            "friend_streak": 21,
+            "messages": [
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-10-18T21:43:07.720223"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/26.jpg"
+        },
+        {
+            "username": "user_34",
+            "friend_streak": 47,
+            "messages": [
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-10-22T15:00:07.720236"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-18T19:01:07.720244"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/83.jpg"
+        },
+        {
+            "username": "user_35",
+            "friend_streak": 36,
+            "messages": [
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-13T02:20:07.720258"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-11-06T18:03:07.720266"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/58.jpg"
+        },
+        {
+            "username": "user_36",
+            "friend_streak": 79,
+            "messages": [
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-27T10:46:07.720279"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/46.jpg"
+        },
+        {
+            "username": "user_37",
+            "friend_streak": 80,
+            "messages": [
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-10-30T08:59:07.720292"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-11-07T21:18:07.720300"
+                },
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-10-17T08:29:07.720308"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-10-28T04:15:07.720316"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/19.jpg"
+        },
+        {
+            "username": "user_38",
+            "friend_streak": 99,
+            "messages": [
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-11-09T09:10:07.720330"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-10-22T21:13:07.720339"
+                },
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-10-26T03:04:07.720347"
+                },
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-10-30T07:09:07.720355"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/5.jpg"
+        },
+        {
+            "username": "user_39",
+            "friend_streak": 10,
+            "messages": [
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-24T13:24:07.720369"
+                },
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-10-18T21:25:07.720377"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/8.jpg"
+        },
+        {
+            "username": "user_40",
+            "friend_streak": 33,
+            "messages": [
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-10-21T23:06:07.720390"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-10-26T17:25:07.720399"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-20T18:51:07.720407"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/62.jpg"
+        },
+        {
+            "username": "user_41",
+            "friend_streak": 20,
+            "messages": [
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-11-07T19:38:07.720421"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-11-06T08:39:07.720429"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-26T01:26:07.720437"
+                },
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-29T08:40:07.720445"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-11-07T04:51:07.720453"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/59.jpg"
+        },
+        {
+            "username": "user_42",
+            "friend_streak": 9,
+            "messages": [
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-10-19T12:49:07.720467"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-11-05T23:31:07.720475"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-11-10T07:35:07.720483"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/22.jpg"
+        },
+        {
+            "username": "user_43",
+            "friend_streak": 12,
+            "messages": [
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-11-04T04:16:07.720496"
+                },
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-12T13:09:07.720504"
+                },
+                {
+                    "text": "Let's hang out soon.",
+                    "timestamp": "2024-10-31T18:30:07.720512"
+                },
+                {
+                    "text": "Did you finish the new level?",
+                    "timestamp": "2024-11-06T13:03:07.720520"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/49.jpg"
+        },
+        {
+            "username": "user_44",
+            "friend_streak": 10,
+            "messages": [
+                {
+                    "text": "Let's play tonight!",
+                    "timestamp": "2024-10-25T22:48:07.720533"
+                },
+                {
+                    "text": "Let's hang out soon.",
+                    "timestamp": "2024-10-21T06:01:07.720541"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-12T02:45:07.720550"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/14.jpg"
+        },
+        {
+            "username": "user_45",
+            "friend_streak": 81,
+            "messages": [
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-15T21:44:07.720563"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/47.jpg"
+        },
+        {
+            "username": "user_46",
+            "friend_streak": 84,
+            "messages": [
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-30T11:28:07.720576"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-26T20:55:07.720584"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/45.jpg"
+        },
+        {
+            "username": "user_47",
+            "friend_streak": 83,
+            "messages": [
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-10-26T01:45:07.720598"
+                },
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-11-04T08:54:07.720609"
+                },
+                {
+                    "text": "Look at the stars tonight!",
+                    "timestamp": "2024-11-04T10:59:07.720617"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/men/23.jpg"
+        },
+        {
+            "username": "user_48",
+            "friend_streak": 12,
+            "messages": [
+                {
+                    "text": "What's up?",
+                    "timestamp": "2024-11-06T00:45:07.720629"
+                },
+                {
+                    "text": "Beautiful sky, right?",
+                    "timestamp": "2024-10-20T06:10:07.720637"
+                },
+                {
+                    "text": "Great job today!",
+                    "timestamp": "2024-10-12T07:59:07.720646"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/25.jpg"
+        },
+        {
+            "username": "user_49",
+            "friend_streak": 74,
+            "messages": [
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-13T04:57:07.720660"
+                },
+                {
+                    "text": "Hey! How's it going?",
+                    "timestamp": "2024-10-30T21:11:07.720668"
+                },
+                {
+                    "text": "See you at the game later!",
+                    "timestamp": "2024-10-26T16:15:07.720676"
+                },
+                {
+                    "text": "Can't wait for the weekend!",
+                    "timestamp": "2024-11-06T05:04:07.720684"
+                }
+            ],
+            "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+        }
+    ]
+}

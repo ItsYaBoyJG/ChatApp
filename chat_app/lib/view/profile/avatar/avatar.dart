@@ -1,7 +1,7 @@
+import 'package:chat_app/models/images/profile_picture.dart';
+import 'package:chat_app/models/json/get_profile_pic.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:snapchat_clone/models/images/profile_picture.dart';
-import 'package:snapchat_clone/models/json/get_profile_pic.dart';
 
 class ProfileAvatar extends StatefulWidget {
   const ProfileAvatar({super.key});

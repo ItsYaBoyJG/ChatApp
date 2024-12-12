@@ -1,6 +1,6 @@
+import 'package:chat_app/models/json/get_chat_data.dart';
+import 'package:chat_app/models/user/user_model.dart';
 import 'package:flutter/material.dart';
-import 'package:snapchat_clone/models/json/get_chat_data.dart';
-import 'package:snapchat_clone/models/user/user_model.dart';
 
 class StoryTile extends StatefulWidget {
   const StoryTile({super.key});

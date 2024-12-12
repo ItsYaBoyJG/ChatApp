@@ -1,6 +1,6 @@
+import 'package:chat_app/models/json/get_articles.dart';
+import 'package:chat_app/models/news/news_model.dart';
 import 'package:flutter/material.dart';
-import 'package:snapchat_clone/models/json/get_articles.dart';
-import 'package:snapchat_clone/models/news/news_model.dart';
 
 class ForYouTile extends StatefulWidget {
   const ForYouTile({super.key});
@@ -10,7 +10,7 @@ class ForYouTile extends StatefulWidget {
 }
 
 class _ForYouTileState extends State<ForYouTile> {
-  GetArticles _getArticles = GetArticles();
+  final GetArticles _getArticles = GetArticles();
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(

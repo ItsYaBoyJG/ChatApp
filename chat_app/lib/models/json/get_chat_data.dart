@@ -1,7 +1,7 @@
 import 'dart:convert';
 
+import 'package:chat_app/models/user/user_model.dart';
 import 'package:flutter/services.dart';
-import 'package:snapchat_clone/models/user/user_model.dart';
 
 class GetChatData {
   final _filepath = 'assets/json/snapchat_mock_data.json';

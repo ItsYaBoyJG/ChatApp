@@ -1,11 +1,11 @@
+import 'package:chat_app/models/enums/data_type.dart';
+import 'package:chat_app/view/profile/images/memories_list.dart';
+import 'package:chat_app/view/profile/images/snap_list.dart';
+import 'package:chat_app/view/profile/images/stories_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:snapchat_clone/models/enums/data_type.dart';
-import 'package:snapchat_clone/view/profile/images/memories_list.dart';
-import 'package:snapchat_clone/view/profile/images/snap_list.dart';
-import 'package:snapchat_clone/view/profile/images/stories_list.dart';
 
 class ProfilePage extends StatefulHookConsumerWidget {
   const ProfilePage({super.key});

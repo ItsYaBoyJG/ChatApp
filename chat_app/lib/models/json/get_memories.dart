@@ -1,7 +1,7 @@
 import 'dart:convert';
 
+import 'package:chat_app/models/images/memories_model.dart';
 import 'package:flutter/services.dart';
-import 'package:snapchat_clone/models/images/memories_model.dart';
 
 class GetMemories {
   final _filepath = 'assets/json/memories.json';

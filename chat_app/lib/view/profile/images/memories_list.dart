@@ -1,6 +1,6 @@
+import 'package:chat_app/models/images/memories_model.dart';
+import 'package:chat_app/models/json/get_memories.dart';
 import 'package:flutter/material.dart';
-import 'package:snapchat_clone/models/images/memories_model.dart';
-import 'package:snapchat_clone/models/json/get_memories.dart';
 
 class MemoriesList extends StatefulWidget {
   const MemoriesList({super.key});
