@@ -1,7 +1,6 @@
 # A video chat mobile app 
 
-This project is written in Flutter and currently has two different application choices. One uses 
-Flutter WebRTC package, and the other uses the Getstream.io's video package.
+This project is written in Flutter, currently has two different video streaming choices, and is still ongoing. One uses Flutter WebRTC package, and the other uses the Getstream.io's video package.
 
 
 Information on the version with Flutter WebRTC can be found [here](https://github.com/ItsYaBoyJG/ChatApp/blob/main/chat_app_w_flutter_webrtc/readme.md).
