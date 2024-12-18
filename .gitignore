@@ -1,0 +1,3 @@
+chat_app/firebase.json
+chat_app/lib/firebase_options.dart
+chat_app_w_stream_video/chat_app/lib/models/stream_api/credentials.dart
