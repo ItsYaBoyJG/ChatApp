@@ -5,6 +5,6 @@ This project is written in Flutter, currently has two different video streaming 
 
 Information on the version with Flutter WebRTC can be found [here](https://github.com/ItsYaBoyJG/ChatApp/blob/main/chat_app_w_flutter_webrtc/readme.md).
 
-Information on the version using the StreamVideo api can be found [here](https://github.com/ItsYaBoyJG/ChatApp/blob/main/chat_app_w_stream_video/README.md).
+Information on the version using the StreamVideo API can be found [here](https://github.com/ItsYaBoyJG/ChatApp/blob/main/chat_app_w_stream_video/README.md).
 
 
