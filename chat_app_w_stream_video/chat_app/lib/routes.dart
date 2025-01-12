@@ -1,4 +1,4 @@
-import 'package:chat_app/controllers/providers/auth.dart';
+import 'package:chat_app/providers/auth.dart';
 import 'package:chat_app/utils/splash_screen.dart';
 import 'package:chat_app/view/auth/onboarding.dart';
 import 'package:chat_app/view/chats/friends/friends_list.dart';
@@ -7,7 +7,7 @@ import 'package:chat_app/view/camera/camera.dart';
 import 'package:chat_app/view/chats/chat_page.dart';
 import 'package:chat_app/view/discover/discover.dart';
 import 'package:chat_app/view/chats/messages/messages_view.dart';
-import 'package:chat_app/view/profile/friends_list/selected.dart';
+import 'package:chat_app/view/profile/widgets/selected.dart';
 import 'package:chat_app/view/profile/profile_page.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';

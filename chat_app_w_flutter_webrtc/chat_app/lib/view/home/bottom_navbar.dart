@@ -1,5 +1,5 @@
-import 'package:chat_app/controllers/providers/nav.dart';
-import 'package:chat_app/models/widgets/navbar/navbar.dart';
+import 'package:chat_app/providers/nav.dart';
+import 'package:chat_app/widgets/navbar/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

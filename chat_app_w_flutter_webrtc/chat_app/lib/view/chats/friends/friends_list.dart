@@ -1,7 +1,7 @@
-import 'package:chat_app/backend/auth/user_auth.dart';
-import 'package:chat_app/backend/writes/writes.dart';
-import 'package:chat_app/controllers/providers/state_providers.dart';
-import 'package:chat_app/controllers/providers/stream.dart';
+import 'package:chat_app/backend/user_auth.dart';
+import 'package:chat_app/backend/writes.dart';
+import 'package:chat_app/providers/state_providers.dart';
+import 'package:chat_app/providers/stream.dart';
 import 'package:chat_app/view/chats/friends/active_users.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart';

@@ -1,6 +1,6 @@
-import 'package:chat_app/models/enums/app_emum_states.dart';
-import 'package:chat_app/models/http/video_signalling.dart';
-import 'package:chat_app/models/http/session.dart';
+import 'package:chat_app/utils/enums/app_emum_states.dart';
+import 'package:chat_app/data/video_signalling.dart';
+import 'package:chat_app/data/session.dart';
 import 'package:chat_app/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_webrtc/flutter_webrtc.dart';

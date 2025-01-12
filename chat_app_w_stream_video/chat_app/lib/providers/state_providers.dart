@@ -1,4 +1,4 @@
-import 'package:chat_app/backend/auth/user_auth.dart';
+import 'package:chat_app/backend/user_auth.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart';
 

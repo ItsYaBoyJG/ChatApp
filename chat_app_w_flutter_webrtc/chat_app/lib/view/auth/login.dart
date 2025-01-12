@@ -1,4 +1,4 @@
-import 'package:chat_app/backend/auth/user_auth.dart';
+import 'package:chat_app/backend/user_auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';

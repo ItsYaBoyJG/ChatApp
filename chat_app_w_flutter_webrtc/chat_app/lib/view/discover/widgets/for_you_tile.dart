@@ -1,4 +1,4 @@
-import 'package:chat_app/models/json/get_articles.dart';
+import 'package:chat_app/backend/json/get_articles.dart';
 import 'package:chat_app/models/news/news_model.dart';
 import 'package:flutter/material.dart';
 

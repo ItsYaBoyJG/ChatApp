@@ -1,17 +1,16 @@
 import 'package:chat_app/models/images/memories_model.dart';
-import 'package:chat_app/models/json/get_memories.dart';
+import 'package:chat_app/backend/json/get_memories.dart';
 import 'package:flutter/material.dart';
 
-class StoriesList extends StatefulWidget {
-  const StoriesList({super.key});
+class SnapList extends StatefulWidget {
+  const SnapList({super.key});
 
   @override
-  State<StoriesList> createState() => _StoriesListState();
+  State<SnapList> createState() => _SnapListState();
 }
 
-class _StoriesListState extends State<StoriesList> {
+class _SnapListState extends State<SnapList> {
   GetMemories _getMemories = GetMemories();
-
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(

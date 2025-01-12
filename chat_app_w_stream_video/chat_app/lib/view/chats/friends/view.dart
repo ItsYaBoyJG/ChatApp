@@ -1,4 +1,4 @@
-import 'package:chat_app/controllers/providers/nav.dart';
+import 'package:chat_app/providers/nav.dart';
 import 'package:chat_app/view/chats/friends/active_users.dart';
 import 'package:chat_app/view/chats/friends/friends_list.dart';
 import 'package:flutter/material.dart';

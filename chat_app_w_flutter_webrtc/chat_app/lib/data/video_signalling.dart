@@ -2,11 +2,11 @@
 
 import 'dart:convert';
 
-import 'package:chat_app/models/enums/app_emum_states.dart';
-import 'package:chat_app/models/http/credentials.dart';
+import 'package:chat_app/utils/enums/app_emum_states.dart';
+import 'package:chat_app/data/credentials.dart';
 import 'package:chat_app/utils/device_info.dart';
-import 'package:chat_app/models/http/session.dart';
-import 'package:chat_app/models/http/web_socket.dart';
+import 'package:chat_app/data/session.dart';
+import 'package:chat_app/data/web_socket.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_webrtc/flutter_webrtc.dart';
 import 'package:uuid/uuid.dart';

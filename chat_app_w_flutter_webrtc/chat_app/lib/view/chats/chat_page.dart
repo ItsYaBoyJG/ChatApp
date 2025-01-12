@@ -1,8 +1,8 @@
-import 'package:chat_app/controllers/providers/nav.dart';
+import 'package:chat_app/providers/nav.dart';
 import 'package:chat_app/view/chats/friends/view.dart';
 import 'package:chat_app/view/chats/messages/message_threads_list.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:chat_app/view/profile/avatar/avatar.dart';
+import 'package:chat_app/view/profile/widgets/avatar/avatar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';

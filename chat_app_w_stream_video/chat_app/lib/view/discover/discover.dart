@@ -1,7 +1,7 @@
 import 'package:chat_app/view/discover/widgets/for_you_tile.dart';
 import 'package:chat_app/view/discover/widgets/story_tile.dart';
 import 'package:chat_app/view/discover/widgets/sub_tile.dart';
-import 'package:chat_app/view/profile/avatar/avatar.dart';
+import 'package:chat_app/view/profile/widgets/avatar.dart';
 import 'package:flutter/material.dart';
 
 class DiscoverPage extends StatefulWidget {

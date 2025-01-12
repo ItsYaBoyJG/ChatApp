@@ -1,5 +1,5 @@
 import 'package:chat_app/models/images/profile_picture.dart';
-import 'package:chat_app/models/json/get_profile_pic.dart';
+import 'package:chat_app/backend/json/get_profile_pic.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

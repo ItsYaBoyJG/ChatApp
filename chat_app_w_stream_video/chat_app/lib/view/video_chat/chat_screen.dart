@@ -1,7 +1,7 @@
-import 'package:chat_app/backend/auth/user_auth.dart';
-import 'package:chat_app/controllers/providers/future.dart';
-import 'package:chat_app/controllers/providers/stream.dart';
-import 'package:chat_app/models/enums/app_emum_states.dart';
+import 'package:chat_app/backend/user_auth.dart';
+import 'package:chat_app/providers/future.dart';
+import 'package:chat_app/providers/stream.dart';
+import 'package:chat_app/utils/enums/app_emum_states.dart';
 import 'package:chat_app/models/stream_api/credentials.dart';
 import 'package:chat_app/utils/theme/app_theme.dart';
 import 'package:chat_app/view/video_chat/call_container.dart';

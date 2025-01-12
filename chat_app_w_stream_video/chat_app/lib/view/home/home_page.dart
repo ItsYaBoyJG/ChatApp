@@ -1,4 +1,4 @@
-import 'package:chat_app/controllers/providers/nav.dart';
+import 'package:chat_app/providers/nav.dart';
 import 'package:chat_app/utils/theme/app_theme.dart';
 import 'package:chat_app/view/chats/chat_page.dart';
 import 'package:chat_app/view/discover/discover.dart';

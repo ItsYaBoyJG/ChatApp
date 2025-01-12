@@ -1,4 +1,4 @@
-import 'package:chat_app/models/widgets/buttons/fab/expandable_comp.dart';
+import 'package:chat_app/widgets/buttons/fab/expandable_comp.dart';
 import 'package:chat_app/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 

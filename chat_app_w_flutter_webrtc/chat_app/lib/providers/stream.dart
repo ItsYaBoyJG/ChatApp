@@ -1,4 +1,4 @@
-import 'package:chat_app/backend/streams/streams.dart';
+import 'package:chat_app/backend/streams.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart';
 import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';

@@ -1,4 +1,4 @@
-import 'package:chat_app/models/widgets/list_card_tile.dart';
+import 'package:chat_app/widgets/list_card_tile.dart';
 import 'package:chat_app/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';

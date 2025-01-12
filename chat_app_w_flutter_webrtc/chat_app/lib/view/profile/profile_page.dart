@@ -1,8 +1,8 @@
-import 'package:chat_app/backend/writes/writes.dart';
-import 'package:chat_app/models/enums/data_type.dart';
-import 'package:chat_app/view/profile/images/memories_list.dart';
-import 'package:chat_app/view/profile/images/snap_list.dart';
-import 'package:chat_app/view/profile/images/stories_list.dart';
+import 'package:chat_app/backend/writes.dart';
+import 'package:chat_app/utils/enums/data_type.dart';
+import 'package:chat_app/view/profile/widgets/images/memories_list.dart';
+import 'package:chat_app/view/profile/widgets/images/snap_list.dart';
+import 'package:chat_app/view/profile/widgets/images/stories_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
