@@ -4,7 +4,7 @@ publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: ^3.5.3
+  sdk: ^3.6.1
 
 dependencies:
   flutter:
@@ -71,3 +71,4 @@ flutter:
     - assets/json/news_articles.json
     - assets/json/profile_picture.json
     - assets/json/snapchat_mock_data.json
+    - assets/json/map_data.json
