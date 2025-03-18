@@ -1,6 +1,6 @@
 import 'package:chat_app/providers/auth.dart';
 import 'package:chat_app/utils/splash_screen.dart';
-import 'package:chat_app/view/auth/onboarding.dart';
+import 'package:chat_app/view/onboarding/onboarding.dart';
 import 'package:chat_app/view/chats/friends/friends_list.dart';
 import 'package:chat_app/view/home/home_page.dart';
 import 'package:chat_app/view/camera/camera.dart';
@@ -12,9 +12,10 @@ import 'package:chat_app/view/profile/profile_page.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-final routerProvider = Provider(
+final routerProvider = Provider<GoRouter>(
   (ref) {
     final authState = ref.watch(userAuthStateProvider);
+
     return GoRouter(
       routes: [
         GoRoute(

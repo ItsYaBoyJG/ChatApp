@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "628866742091",
+    "project_id": "chatappexample-fc88b",
+    "storage_bucket": "chatappexample-fc88b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628866742091:android:2827bcfb3d3c93ce235ace",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7YiH-AReizhw4BNUXmZ8gad3UPZGf5gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628866742091:android:5d42b536dbefd43b235ace",
+        "android_client_info": {
+          "package_name": "com.example.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7YiH-AReizhw4BNUXmZ8gad3UPZGf5gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

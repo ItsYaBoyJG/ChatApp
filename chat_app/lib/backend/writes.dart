@@ -1,3 +1,4 @@
+import 'package:chat_app/models/user/user_video_creds.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart';
 import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
@@ -65,11 +66,11 @@ class DbWrites {
   }
 
   void saveUserStreamVideoCredential(
-      String uId, String streamApiUserId, String streamApiUserToken) {
-    _firebaseFirestore.collection('userVideoCredential').doc(uId).set({
-      'userToken': streamApiUserToken,
-      'userId': streamApiUserId,
-    });
+      String uId, UserVideoCredentials credentials) {
+    _firebaseFirestore
+        .collection('userVideoCredential')
+        .doc(uId)
+        .set(credentials.toJson());
   }
 
   /// remove selected user from friends list

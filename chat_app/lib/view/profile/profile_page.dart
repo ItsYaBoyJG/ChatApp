@@ -3,6 +3,7 @@ import 'package:chat_app/utils/enums/data_type.dart';
 import 'package:chat_app/view/profile/widgets/memories_list.dart';
 import 'package:chat_app/view/profile/widgets/snap_list.dart';
 import 'package:chat_app/view/profile/widgets/stories_list.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
@@ -29,7 +30,11 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.settings))
+          IconButton(
+              onPressed: () {
+                FirebaseAuth.instance.signOut();
+              },
+              icon: const Icon(Icons.settings))
         ],
       ),
       body: Column(

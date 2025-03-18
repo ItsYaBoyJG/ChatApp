@@ -1,4 +1,4 @@
-import 'package:chat_app/models/json/get_chat_data.dart';
+import 'package:chat_app/backend/from_json/get_chat_data.dart';
 import 'package:chat_app/models/user/user_model.dart';
 import 'package:flutter/material.dart';
 

@@ -66,8 +66,14 @@ class _VideoChatScreenState extends ConsumerState<VideoChatScreen> {
     }
   }
 
-  _getVideoApiKey() {
+  String _getVideoApiKey() {
     return _streamVideoCredentials.getStreamVideoKey();
+  }
+
+  void _initStreamVideo(String userId, String userToken) {
+    final apiKey = _getVideoApiKey();
+    StreamVideo(apiKey,
+        user: User.regular(userId: userId), userToken: userToken);
   }
 
   Future showMakeCallDialog(
@@ -125,6 +131,7 @@ class _VideoChatScreenState extends ConsumerState<VideoChatScreen> {
   @override
   void initState() {
     _checkPermissions();
+
     super.initState();
   }
 
@@ -140,7 +147,9 @@ class _VideoChatScreenState extends ConsumerState<VideoChatScreen> {
     final videoCallCredentials =
         ref.watch(videoApiCredentialsProvider(_userAuth.getUserId()));
     return videoCallCredentials.when(data: (data) {
-      if (data.data()!.isNotEmpty) {
+      if (data.data() != null && data.exists == true) {
+        Map<String, dynamic> vidCred = data.data() as Map<String, dynamic>;
+        _initStreamVideo(vidCred['userId'], vidCred['userToken']);
         return Scaffold(
           appBar: AppBar(
             title: const Text(''),

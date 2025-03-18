@@ -1,8 +1,8 @@
 import 'dart:async';
+import 'dart:io';
 
-import 'package:flutter/foundation.dart';
+import 'package:chat_app/backend/from_json/get_map_data.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -18,7 +18,8 @@ class _MapPageState extends State<MapPage> {
   final Completer<GoogleMapController> _mapController =
       Completer<GoogleMapController>();
 
-  Position? _position;
+  final GetMapData _json = GetMapData();
+
   LatLng _currentLatLng = const LatLng(0, 0);
   final Set<Marker> _markers = <Marker>{};
 
@@ -27,21 +28,32 @@ class _MapPageState extends State<MapPage> {
   }
 
   void _getCurrentPos() async {
-    _position = await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.high);
-    LatLng currentPos = LatLng(_position!.latitude, _position!.longitude);
+    Position? position;
+    if (Platform.isAndroid) {
+      position = await Geolocator.getCurrentPosition(
+          locationSettings: AndroidSettings());
+    } else {
+      position = await Geolocator.getCurrentPosition(
+          locationSettings: AppleSettings());
+    }
+
+    LatLng currentPos = LatLng(position.latitude, position.longitude);
 
     setState(() {
       _currentLatLng = currentPos;
     });
   }
 
-  getFriendsMarkers(Map friendsList) {
-    for (final element in friendsList.entries) {
+  _getFriendsMarkers() async {
+    final friendsList = await _json.readMapJson();
+    print(friendsList);
+    for (final element in friendsList) {
+      final pos = LatLng(
+          element['location']['latitude'], element['location']['longitude']);
       Marker marker = Marker(
-        markerId: MarkerId(element.value['name']),
-        position: _currentLatLng,
-      );
+          markerId: MarkerId(element['id']),
+          position: pos,
+          icon: AssetMapBitmap(friendsList['avatar_url']));
       _markers.add(marker);
     }
   }
@@ -71,7 +83,7 @@ class _MapPageState extends State<MapPage> {
     return Scaffold(
       body: Stack(
         children: [
-          /*  GoogleMap(
+          GoogleMap(
             mapType: MapType.normal,
             myLocationButtonEnabled: false,
             initialCameraPosition: CameraPosition(target: _currentLatLng),
@@ -81,7 +93,7 @@ class _MapPageState extends State<MapPage> {
             zoomGesturesEnabled: true,
             mapToolbarEnabled: false,
             markers: _markers,
-          ), */
+          ),
         ],
       ),
 

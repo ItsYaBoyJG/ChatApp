@@ -1,5 +1,5 @@
 import 'package:chat_app/models/images/memories_model.dart';
-import 'package:chat_app/models/json/get_memories.dart';
+import 'package:chat_app/backend/from_json/get_memories.dart';
 import 'package:flutter/material.dart';
 
 class SnapList extends StatefulWidget {

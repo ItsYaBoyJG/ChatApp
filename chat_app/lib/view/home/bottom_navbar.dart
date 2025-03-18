@@ -18,9 +18,9 @@ class _BottomNavbarState extends ConsumerState<BottomNavbar> {
     final currentIndex = ref.watch(navBarStateProvider);
     return NavBar(
       items: const [
-        BottomNavigationBarItem(label: '', icon: Icon(Icons.video_call)),
         BottomNavigationBarItem(label: '', icon: Icon(Icons.chat)),
         BottomNavigationBarItem(label: '', icon: Icon(Icons.map_outlined)),
+        BottomNavigationBarItem(label: '', icon: Icon(Icons.video_call)),
         BottomNavigationBarItem(label: '', icon: Icon(Icons.search))
       ],
       currentIndex: currentIndex,

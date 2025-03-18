@@ -1,4 +1,5 @@
 import 'package:chat_app/backend/user_auth.dart';
+import 'package:chat_app/backend/writes.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -11,16 +12,19 @@ class RegistrationPage extends StatefulWidget {
 
 class _RegistrationPageState extends State<RegistrationPage> {
   final UserAuth _userAuth = UserAuth();
+  final DbWrites _dbWrites = DbWrites();
   // global key
   final formKey = GlobalKey<FormState>();
   //text fields
   final emailTextController = TextEditingController();
   final passwordTextController = TextEditingController();
-  final confirmPasswordTextController = TextEditingController();
+  final firstNameController = TextEditingController();
+  final lastNameController = TextEditingController();
   // focus nodes
   final FocusNode emailFocus = FocusNode();
   final FocusNode passwordFocus = FocusNode();
-  final FocusNode confirmPasswordFocus = FocusNode();
+  final FocusNode firstNameFocus = FocusNode();
+  final FocusNode lastNameFocus = FocusNode();
 
   // error message
   late String errorMessage = '';
@@ -41,7 +45,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: SizedBox(
-      height: MediaQuery.of(context).size.height * 0.70,
+      height: MediaQuery.of(context).size.height * 0.80,
       width: double.infinity,
       child: Form(
         key: formKey,
@@ -68,6 +72,66 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     errorMessage,
                     style: const TextStyle(fontSize: 14.0, color: Colors.red),
                     textAlign: TextAlign.center,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  child: TextFormField(
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return 'Please enter your first name';
+                      }
+                      return null;
+                    },
+                    onTapOutside: (event) {
+                      FocusManager.instance.primaryFocus!.unfocus();
+                    },
+                    controller: firstNameController,
+                    keyboardType: TextInputType.name,
+                    autofocus: true,
+                    textInputAction: TextInputAction.next,
+                    focusNode: firstNameFocus,
+                    onFieldSubmitted: (term) {
+                      FocusScope.of(context).requestFocus(lastNameFocus);
+                    },
+                    decoration: InputDecoration(
+                      hintText: 'First Name',
+                      contentPadding:
+                          const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(32.0),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  child: TextFormField(
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return 'Please enter your last name.';
+                      }
+                      return null;
+                    },
+                    onTapOutside: (event) {
+                      FocusManager.instance.primaryFocus!.unfocus();
+                    },
+                    controller: lastNameController,
+                    keyboardType: TextInputType.name,
+                    autofocus: true,
+                    textInputAction: TextInputAction.next,
+                    focusNode: lastNameFocus,
+                    onFieldSubmitted: (term) {
+                      FocusScope.of(context).requestFocus(emailFocus);
+                    },
+                    decoration: InputDecoration(
+                      hintText: 'Last Name',
+                      contentPadding:
+                          const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(32.0),
+                      ),
+                    ),
                   ),
                 ),
                 Padding(
@@ -119,7 +183,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       FocusManager.instance.primaryFocus!.unfocus();
                     },
                     onFieldSubmitted: (term) {
-                      FocusScope.of(context).requestFocus(confirmPasswordFocus);
+                      FocusManager.instance.primaryFocus!.unfocus();
                     },
                     decoration: InputDecoration(
                       hintText: 'Password',
@@ -139,10 +203,15 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
                     try {
-                      _userAuth.registerUser(emailTextController.text,
-                          passwordTextController.text);
+                      _userAuth.registerUser(
+                          emailTextController.text,
+                          passwordTextController.text,
+                          firstNameController.text,
+                          lastNameController.text);
                     } on FirebaseAuthException catch (error) {
-                      errorMessage = error.code;
+                      setState(() {
+                        errorMessage = error.code;
+                      });
                     }
                   }
                 },

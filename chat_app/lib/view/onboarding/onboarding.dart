@@ -1,6 +1,6 @@
-import 'package:chat_app/view/auth/forgot_password.dart';
-import 'package:chat_app/view/auth/login.dart';
-import 'package:chat_app/view/auth/register.dart';
+import 'package:chat_app/view/onboarding/forgot_password.dart';
+import 'package:chat_app/view/onboarding/login.dart';
+import 'package:chat_app/view/onboarding/register.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';

@@ -1,7 +1,7 @@
 import 'package:chat_app/models/group/group_model.dart';
 
-class User {
-  User(
+class UserProfile {
+  UserProfile(
       {required this.userName,
       required this.first,
       required this.last,
@@ -12,11 +12,11 @@ class User {
   final String last;
   final List groups;
 
-  factory User.fromJson(Map<String, dynamic> json) {
+  factory UserProfile.fromJson(Map<String, dynamic> json) {
     var groupsFromJson = json['messages'] as List;
     List groupList = groupsFromJson.map((i) => GroupModel.fromJson(i)).toList();
 
-    return User(
+    return UserProfile(
         userName: json['userName'],
         first: json['first'],
         last: json['last'],

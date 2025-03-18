@@ -38,11 +38,12 @@ class _ActiveUsersState extends ConsumerState<ActiveUsers> {
                 child: ListTile(
                   leading: Text('${user.firstName} ${user.lastName}'),
                   onTap: () {
+                    print(user);
                     ref.read(roomProvider.notifier).state = Room(
                         imageUrl: user.imageUrl,
                         lastMessages: [],
-                        createdAt: user.createdAt,
-                        updatedAt: user.updatedAt,
+                        createdAt: DateTime.now().millisecondsSinceEpoch,
+                        updatedAt: DateTime.now().millisecondsSinceEpoch,
                         metadata: user.metadata,
                         name: '${user.firstName} ${user.lastName}',
                         id: user.id,

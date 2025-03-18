@@ -1,5 +1,5 @@
 import 'package:chat_app/models/images/profile_picture.dart';
-import 'package:chat_app/models/json/get_profile_pic.dart';
+import 'package:chat_app/backend/from_json/get_profile_pic.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -39,7 +39,7 @@ class _ProfileAvatarState extends State<ProfileAvatar> {
                 onPressed: () {
                   context.push('/profile');
                 },
-                child: Text('it was null but can press me'));
+                child: Text('Profile'));
           }
 
           return const CircularProgressIndicator();

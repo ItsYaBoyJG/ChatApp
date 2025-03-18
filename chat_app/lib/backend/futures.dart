@@ -1,3 +1,4 @@
+import 'package:chat_app/models/user/user_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DbFutures {
@@ -33,9 +34,11 @@ class DbFutures {
     }
   }
 
-  Future<DocumentSnapshot<Map<String, dynamic>>> getUserProfileData(
-      String uId) {
-    return _firebaseFirestore.collection('profileData').doc(uId).get();
+  Future<UserProfile> getUserProfileData(String uId) async {
+    final data =
+        await _firebaseFirestore.collection('profileData').doc(uId).get();
+    Map<String, dynamic> json = data.data()!;
+    return UserProfile.fromJson(json);
   }
 
   Future<DocumentSnapshot<Map<String, dynamic>>>

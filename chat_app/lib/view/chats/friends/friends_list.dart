@@ -57,17 +57,14 @@ class _FriendsListState extends ConsumerState<FriendsList> {
       } else {
         return Column(
           children: [
-            Row(
-              children: [
-                SizedBox(
-                    height: 75,
-                    width: MediaQuery.of(context).size.width - 50,
-                    child: const Center(
-                      child: Text(
-                          'Your friends list is empty, but you can always start a '
-                          'conversation with someone and make a new friend'),
-                    ))
-              ],
+            SizedBox(
+              height: 75,
+              width: MediaQuery.of(context).size.width - 100,
+              child: const Center(
+                child: Text(
+                    'Your friends list is empty, but you can always start a '
+                    'conversation with someone and make a new friend'),
+              ),
             ),
             const ActiveUsers()
           ],

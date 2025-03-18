@@ -20,8 +20,6 @@ class _MessageThreadsListState extends ConsumerState<MessageThreadsList> {
   Widget build(BuildContext context) {
     final messageThreadsList = ref.watch(userGroupsStreamProvider);
     return messageThreadsList.when(data: (data) {
-      print(FirebaseAuth.instance.currentUser!.uid);
-      print(data);
       if (data.isNotEmpty) {
         return ListView.builder(
             itemCount: data.length,
