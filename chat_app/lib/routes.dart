@@ -1,4 +1,4 @@
-import 'package:chat_app/providers/auth.dart';
+import 'package:chat_app/core/providers/auth_providers.dart';
 import 'package:chat_app/utils/splash_screen.dart';
 import 'package:chat_app/view/onboarding/onboarding.dart';
 import 'package:chat_app/view/chats/friends/friends_list.dart';
@@ -14,7 +14,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final routerProvider = Provider<GoRouter>(
   (ref) {
-    final authState = ref.watch(userAuthStateProvider);
+    final authState = ref.watch(authStateProvider);
 
     return GoRouter(
       routes: [

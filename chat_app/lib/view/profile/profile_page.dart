@@ -1,4 +1,3 @@
-import 'package:chat_app/backend/writes.dart';
 import 'package:chat_app/utils/enums/data_type.dart';
 import 'package:chat_app/view/profile/widgets/memories_list.dart';
 import 'package:chat_app/view/profile/widgets/snap_list.dart';

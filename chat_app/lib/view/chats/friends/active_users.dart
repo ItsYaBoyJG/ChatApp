@@ -1,7 +1,4 @@
-import 'package:chat_app/backend/user_auth.dart';
-import 'package:chat_app/backend/writes.dart';
-import 'package:chat_app/providers/state_providers.dart';
-import 'package:chat_app/providers/stream.dart';
+import 'package:chat_app/core/providers/chat_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart';
 import 'package:go_router/go_router.dart';

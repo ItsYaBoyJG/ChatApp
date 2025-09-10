@@ -1,18 +1,16 @@
-import 'package:chat_app/backend/user_auth.dart';
-import 'package:chat_app/backend/writes.dart';
+import 'package:chat_app/core/controllers/auth_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class RegistrationPage extends StatefulWidget {
+class RegistrationPage extends ConsumerStatefulWidget {
   const RegistrationPage({super.key});
   @override
-  State<RegistrationPage> createState() => _RegistrationPageState();
+  ConsumerState<RegistrationPage> createState() => _RegistrationPageState();
 }
 
-class _RegistrationPageState extends State<RegistrationPage> {
-  final UserAuth _userAuth = UserAuth();
-  final DbWrites _dbWrites = DbWrites();
+class _RegistrationPageState extends ConsumerState<RegistrationPage> {
   // global key
   final formKey = GlobalKey<FormState>();
   //text fields
@@ -200,14 +198,20 @@ class _RegistrationPageState extends State<RegistrationPage> {
             Padding(
               padding: const EdgeInsets.only(top: 10.0),
               child: ElevatedButton(
-                onPressed: () {
+                onPressed: () async {
                   if (formKey.currentState!.validate()) {
                     try {
-                      _userAuth.registerUser(
-                          emailTextController.text,
-                          passwordTextController.text,
-                          firstNameController.text,
-                          lastNameController.text);
+                      final authController = ref.read(authControllerProvider);
+                      await authController.signUp(
+                        email: emailTextController.text,
+                        password: passwordTextController.text,
+                        firstName: firstNameController.text,
+                        lastName: lastNameController.text,
+                        userName: '${firstNameController.text}_${lastNameController.text}',
+                      );
+                      if (context.mounted) {
+                        context.go('/');
+                      }
                     } on FirebaseAuthException catch (error) {
                       setState(() {
                         errorMessage = error.code;

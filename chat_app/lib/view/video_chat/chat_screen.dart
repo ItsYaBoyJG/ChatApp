@@ -1,7 +1,6 @@
-import 'package:chat_app/backend/user_auth.dart';
-import 'package:chat_app/providers/future.dart';
-import 'package:chat_app/providers/stream.dart';
-import 'package:chat_app/utils/stream_video_credentials.dart';
+import 'package:chat_app/core/providers/auth_providers.dart';
+import 'package:chat_app/core/providers/user_providers.dart';
+import 'package:chat_app/core/providers/video_providers.dart';
 import 'package:chat_app/utils/theme/app_theme.dart';
 import 'package:chat_app/view/video_chat/call_container.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -145,9 +144,9 @@ class _VideoChatScreenState extends ConsumerState<VideoChatScreen> {
     final friendsList =
         ref.watch(userFriendsListStreamProvider(_userAuth.getUserId()));
     final videoCallCredentials =
-        ref.watch(videoApiCredentialsProvider(_userAuth.getUserId()));
+        ref.watch(videoCredentialsProvider(_userAuth.getUserId()));
     return videoCallCredentials.when(data: (data) {
-      if (data.data() != null && data.exists == true) {
+      if (data ) {
         Map<String, dynamic> vidCred = data.data() as Map<String, dynamic>;
         _initStreamVideo(vidCred['userId'], vidCred['userToken']);
         return Scaffold(

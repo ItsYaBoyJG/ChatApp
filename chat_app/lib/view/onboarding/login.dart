@@ -1,18 +1,18 @@
-import 'package:chat_app/backend/user_auth.dart';
+import 'package:chat_app/core/controllers/auth_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 ///  user login page
-class LoginPage extends StatefulWidget {
+class LoginPage extends ConsumerStatefulWidget {
   const LoginPage({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  ConsumerState<LoginPage> createState() => _LoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
-  final UserAuth _userAuth = UserAuth();
+class _LoginPageState extends ConsumerState<LoginPage> {
   final formKey = GlobalKey<FormState>();
 
   TextEditingController emailController = TextEditingController();
@@ -113,15 +113,20 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.all(5.0),
               child: ElevatedButton(
-                onPressed: () {
+                onPressed: () async {
                   if (formKey.currentState!.validate()) {
                     try {
-                      _userAuth.userSignIn(
+                      final authController = ref.read(authControllerProvider);
+                      await authController.signIn(
                           emailController.text, passwordController.text);
+                      if (context.mounted) {
+                        context.go('/');
+                      }
                     } on FirebaseAuthException catch (error) {
-                      ScaffoldMessenger.of(context)
-                          .showSnackBar(SnackBar(content: Text(errorMessage)));
-                      errorMessage = error.code;
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context)
+                            .showSnackBar(SnackBar(content: Text(error.code)));
+                      }
                     }
                   }
                 },

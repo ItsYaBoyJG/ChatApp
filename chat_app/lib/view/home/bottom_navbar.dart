@@ -1,4 +1,4 @@
-import 'package:chat_app/providers/nav.dart';
+import 'package:chat_app/core/providers/ui_providers.dart';
 import 'package:chat_app/widgets/navbar/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -15,7 +15,7 @@ class BottomNavbar extends ConsumerStatefulWidget {
 class _BottomNavbarState extends ConsumerState<BottomNavbar> {
   @override
   Widget build(BuildContext context) {
-    final currentIndex = ref.watch(navBarStateProvider);
+    final currentIndex = ref.watch(navigationIndexProvider);
     return NavBar(
       items: const [
         BottomNavigationBarItem(label: '', icon: Icon(Icons.chat)),
