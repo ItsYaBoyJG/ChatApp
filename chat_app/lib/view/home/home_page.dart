@@ -1,6 +1,4 @@
-import 'package:chat_app/backend/user_auth.dart';
-import 'package:chat_app/providers/future.dart';
-import 'package:chat_app/providers/nav.dart';
+import 'package:chat_app/core/providers/ui_providers.dart';
 import 'package:chat_app/utils/theme/app_theme.dart';
 import 'package:chat_app/view/chats/chat_page.dart';
 import 'package:chat_app/view/discover/discover.dart';
@@ -33,7 +31,7 @@ class _HomePageState extends ConsumerState<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final currentIndex = ref.watch(navBarStateProvider);
+    final currentIndex = ref.watch(navigationIndexProvider);
     return Scaffold(
       body: IndexedStack(
         index: currentIndex,
@@ -41,7 +39,7 @@ class _HomePageState extends ConsumerState<HomePage> {
           ChatPage(),
           MapPage(),
           VideoChatScreen(),
-          DiscoverPage()
+          DiscoverPage(),
         ],
       ),
       bottomNavigationBar: const BottomNavbar(),

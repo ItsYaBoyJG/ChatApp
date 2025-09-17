@@ -21,11 +21,11 @@ class _BottomNavbarState extends ConsumerState<BottomNavbar> {
         BottomNavigationBarItem(label: '', icon: Icon(Icons.chat)),
         BottomNavigationBarItem(label: '', icon: Icon(Icons.map_outlined)),
         BottomNavigationBarItem(label: '', icon: Icon(Icons.video_call)),
-        BottomNavigationBarItem(label: '', icon: Icon(Icons.search))
+        BottomNavigationBarItem(label: '', icon: Icon(Icons.search)),
       ],
       currentIndex: currentIndex,
       onTap: (value) {
-        ref.read(navBarStateProvider.notifier).state = value;
+        ref.read(navigationIndexProvider.notifier).state = value;
       },
     );
   }
