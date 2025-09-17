@@ -1,6 +1,4 @@
-import 'package:chat_app/providers/state_providers.dart';
-import 'package:chat_app/providers/stream.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:chat_app/core/providers/chat_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart';
 import 'package:go_router/go_router.dart';
@@ -18,39 +16,44 @@ class MessageThreadsList extends ConsumerStatefulWidget {
 class _MessageThreadsListState extends ConsumerState<MessageThreadsList> {
   @override
   Widget build(BuildContext context) {
-    final messageThreadsList = ref.watch(userGroupsStreamProvider);
-    return messageThreadsList.when(data: (data) {
-      if (data.isNotEmpty) {
-        return ListView.builder(
+    final messageThreadsList = ref.watch(chatRoomsProvider);
+    return messageThreadsList.when(
+      data: (data) {
+        if (data.isNotEmpty) {
+          return ListView.builder(
             itemCount: data.length,
             itemBuilder: (context, index) {
               return Card(
                 child: ListTile(
                   leading: Text('${data[index].name}'),
                   onTap: () {
-                    ref.read(roomProvider.notifier).state = Room(
-                        id: data[index].id,
-                        type: data[index].type,
-                        users: data[index].users);
+                    ref.read(selectedRoomProvider.notifier).state = Room(
+                      id: data[index].id,
+                      type: data[index].type,
+                      users: data[index].users,
+                    );
 
                     context.push('/messages');
                   },
                 ),
               );
-            });
-      } else {
-        return const Padding(
+            },
+          );
+        } else {
+          return const Padding(
             padding: EdgeInsets.all(18.0),
-            child: Center(
-              child: Text('You have no messages.'),
-            ));
-      }
-    }, error: (error, stackTrace) {
-      print(error);
-      print(stackTrace);
-      return Text('error $error');
-    }, loading: () {
-      return const CircularProgressIndicator.adaptive();
-    });
+            child: Center(child: Text('You have no messages.')),
+          );
+        }
+      },
+      error: (error, stackTrace) {
+        print(error);
+        print(stackTrace);
+        return Text('error $error');
+      },
+      loading: () {
+        return const CircularProgressIndicator.adaptive();
+      },
+    );
   }
 }

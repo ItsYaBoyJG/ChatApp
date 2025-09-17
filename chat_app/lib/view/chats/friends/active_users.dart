@@ -1,4 +1,5 @@
 import 'package:chat_app/core/providers/chat_providers.dart';
+import 'package:chat_app/core/providers/service_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart';
 import 'package:go_router/go_router.dart';
@@ -15,19 +16,21 @@ class ActiveUsers extends ConsumerStatefulWidget {
 }
 
 class _ActiveUsersState extends ConsumerState<ActiveUsers> {
-  final DbWrites _dbWrites = DbWrites();
   final Uuid _uuid = const Uuid();
-  final UserAuth _userAuth = UserAuth();
 
   @override
   Widget build(BuildContext context) {
     final availableUsers = ref.watch(availableUsersProvider);
-    final room = ref.watch(roomProvider);
-    return availableUsers.when(data: (data) {
-      return SizedBox(
-        height: MediaQuery.of(context).size.height * 0.60,
-        width: MediaQuery.of(context).size.width - 10,
-        child: ListView.builder(
+    final auth = ref.watch(authServiceProvider);
+    final chatService = ref.watch(chatServiceProvider);
+    final userService = ref.watch(userServiceProvider);
+    final room = ref.watch(selectedRoomProvider);
+    return availableUsers.when(
+      data: (data) {
+        return SizedBox(
+          height: MediaQuery.of(context).size.height * 0.60,
+          width: MediaQuery.of(context).size.width - 10,
+          child: ListView.builder(
             itemCount: data.length,
             itemBuilder: (context, index) {
               final user = data[index];
@@ -36,20 +39,22 @@ class _ActiveUsersState extends ConsumerState<ActiveUsers> {
                   leading: Text('${user.firstName} ${user.lastName}'),
                   onTap: () {
                     print(user);
-                    ref.read(roomProvider.notifier).state = Room(
-                        imageUrl: user.imageUrl,
-                        lastMessages: [],
-                        createdAt: DateTime.now().millisecondsSinceEpoch,
-                        updatedAt: DateTime.now().millisecondsSinceEpoch,
-                        metadata: user.metadata,
-                        name: '${user.firstName} ${user.lastName}',
-                        id: user.id,
-                        type: RoomType.direct,
-                        users: [
-                          User(id: _userAuth.getUserId()),
-                          User(id: user.id)
-                        ]);
-                    _dbWrites.createSingleRoom(User(
+                    ref.read(selectedRoomProvider.notifier).state = Room(
+                      imageUrl: user.imageUrl,
+                      lastMessages: [],
+                      createdAt: DateTime.now().millisecondsSinceEpoch,
+                      updatedAt: DateTime.now().millisecondsSinceEpoch,
+                      metadata: user.metadata,
+                      name: '${user.firstName} ${user.lastName}',
+                      id: user.id,
+                      type: RoomType.direct,
+                      users: [
+                        User(id: auth.currentUser!.uid),
+                        User(id: user.id),
+                      ],
+                    );
+                    chatService.createRoom(
+                      User(
                         id: user.id,
                         firstName: user.firstName,
                         lastName: user.lastName,
@@ -58,26 +63,33 @@ class _ActiveUsersState extends ConsumerState<ActiveUsers> {
                         createdAt: DateTime.now().millisecondsSinceEpoch,
                         updatedAt: DateTime.now().millisecondsSinceEpoch,
                         role: Role.user,
-                        metadata: user.metadata));
+                        metadata: user.metadata,
+                      ),
+                    );
 
-                    _dbWrites.addUserToFriendsList(_userAuth.getUserId(), user);
+                    userService.addUserToFriendsList(
+                      auth.currentUser!.uid,
+                      user,
+                    );
 
                     context.push('/messages');
                   },
                 ),
               );
-            }),
-      );
-    }, error: (error, stackTrace) {
-      return Text('active user error');
-    }, loading: () {
-      return SizedBox(
-        height: 150,
-        width: 150,
-        child: Center(
-          child: CircularProgressIndicator.adaptive(),
-        ),
-      );
-    });
+            },
+          ),
+        );
+      },
+      error: (error, stackTrace) {
+        return Text('active user error');
+      },
+      loading: () {
+        return SizedBox(
+          height: 150,
+          width: 150,
+          child: Center(child: CircularProgressIndicator.adaptive()),
+        );
+      },
+    );
   }
 }

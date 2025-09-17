@@ -1,4 +1,4 @@
-import 'package:chat_app/providers/nav.dart';
+import 'package:chat_app/core/providers/ui_providers.dart';
 import 'package:chat_app/view/chats/friends/active_users.dart';
 import 'package:chat_app/view/chats/friends/friends_list.dart';
 import 'package:flutter/material.dart';
@@ -19,9 +19,9 @@ class _FriendsViewState extends ConsumerState<FriendsView> {
     final friendsPageIndex = ref.watch(friendsPageIndexProvider);
 
     return SizedBox(
-        height: MediaQuery.of(context).size.height * 0.85,
-        width: MediaQuery.of(context).size.width - 20,
-        child:
-            friendsPageIndex == 0 ? const FriendsList() : const ActiveUsers());
+      height: MediaQuery.of(context).size.height * 0.85,
+      width: MediaQuery.of(context).size.width - 20,
+      child: friendsPageIndex == 0 ? const FriendsList() : const ActiveUsers(),
+    );
   }
 }

@@ -1,5 +1,4 @@
-import 'package:chat_app/backend/from_json/get_chat_data.dart';
-import 'package:chat_app/models/user/user_model.dart';
+import 'package:chat_app/data/datasources/json/get_chat_data.dart';
 import 'package:flutter/material.dart';
 
 class StoryTile extends StatefulWidget {
@@ -25,7 +24,7 @@ class _StoryTileState extends State<StoryTile> {
             'Stories',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
           ),
-          Placeholder()
+          Placeholder(),
         ],
       ),
     );

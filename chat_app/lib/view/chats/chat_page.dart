@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
+import 'package:chat_app/core/providers/ui_providers.dart';
 
 class ChatPage extends ConsumerStatefulWidget {
   const ChatPage({super.key});
@@ -20,62 +21,63 @@ class ChatPage extends ConsumerStatefulWidget {
 class _ChatPageState extends ConsumerState<ChatPage> {
   @override
   Widget build(BuildContext context) {
-    final currentPage = ref.watch(chatpageIndexProvider);
+    final currentPage = ref.watch(chatPageIndexProvider);
     return Scaffold(
-        appBar: AppBar(
-          actions: const [ProfileAvatar()],
-        ),
-        body: Column(
-          children: [
-            currentPage != 0
-                ? Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      ElevatedButton(
-                          onPressed: () {
-                            ref.read(chatpageIndexProvider.notifier).state = 0;
-                          },
-                          child: const Text('Chats')),
-                      ElevatedButton(
-                          onPressed: () {
-                            ref.read(friendsPageIndexProvider.notifier).state =
-                                0;
-                          },
-                          child: const Text('Friends')),
-                      ElevatedButton(
-                          onPressed: () {
-                            ref.read(friendsPageIndexProvider.notifier).state =
-                                1;
-                          },
-                          child: const Text('Active Users')),
-                    ],
-                  )
-                : Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      ElevatedButton(
-                          onPressed: () async {
-                            ref.read(chatpageIndexProvider.notifier).state = 0;
-                          },
-                          child: const Text('Chats')),
-                      ElevatedButton.icon(
-                        onPressed: () {
-                          ref.read(chatpageIndexProvider.notifier).state = 1;
-                        },
-                        label: const Text('New'),
-                        icon: const Icon(Icons.add),
-                      ),
-                    ],
-                  ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.70,
-              width: MediaQuery.of(context).size.width - 20,
-              child: currentPage == 0
-                  ? const MessageThreadsList()
-                  : const FriendsView(),
-            )
-          ],
-        ));
+      appBar: AppBar(actions: const [ProfileAvatar()]),
+      body: Column(
+        children: [
+          currentPage != 0
+              ? Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        ref.read(chatPageIndexProvider.notifier).state = 0;
+                      },
+                      child: const Text('Chats'),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        ref.read(friendsPageIndexProvider.notifier).state = 0;
+                      },
+                      child: const Text('Friends'),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        ref.read(friendsPageIndexProvider.notifier).state = 1;
+                      },
+                      child: const Text('Active Users'),
+                    ),
+                  ],
+                )
+              : Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () async {
+                        ref.read(chatPageIndexProvider.notifier).state = 0;
+                      },
+                      child: const Text('Chats'),
+                    ),
+                    ElevatedButton.icon(
+                      onPressed: () {
+                        ref.read(chatPageIndexProvider.notifier).state = 1;
+                      },
+                      label: const Text('New'),
+                      icon: const Icon(Icons.add),
+                    ),
+                  ],
+                ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.70,
+            width: MediaQuery.of(context).size.width - 20,
+            child: currentPage == 0
+                ? const MessageThreadsList()
+                : const FriendsView(),
+          ),
+        ],
+      ),
+    );
   }
 }
 
